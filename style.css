@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
+  background: linear-gradient(236.85deg, #5d46e2 27.26%, #766ec5 96.03%);
   font-family: "Roboto", sans-serif;
 }
 
@@ -43,6 +43,19 @@ body {
   font-size: 24px;
 }
 
+.redes {
+  color: #5046af;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 .tema button {
   align-self: flex-end;
   font-size: 24px;
@@ -53,11 +66,14 @@ body {
 }
 
 .projetos {
+  max-height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
   display: flex;
   flex-direction: column;
   margin-top: 24px;
   padding: 32px;
-  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  background: linear-gradient(230.65deg, #9265ff 27.49%, #cfb1ff 83.19%);
   border-radius: 20px;
   box-shadow: 2px 2px 4px rgba(16, 16, 0, 0.42);
 }
@@ -82,7 +98,14 @@ body {
 }
 
 .dark {
-  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+  background: linear-gradient(236.85deg, #4a28ea 27.26%, #633ed5 96.03%);
+}
+
+.dark .redes a {
+  text-decoration: none;
+  color: #f6f6f6;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .dark .container {
@@ -98,4 +121,26 @@ body {
   background: #1c1c1c;
   color: #ffffff;
   border: 2px solid #f7f7f7;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border: 1.8px solid #1c1c1c;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ecf4ff;
+}
+
+::-webkit-scrollbar-track {
+  background: #ecf4ff;
+  border-radius: 100px;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+  margin: 15px 0px;
 }
